@@ -72316,10 +72316,6 @@ Webflow.define('forms', module.exports = function ($, _) {
       return;
     } // Show or hide status divs
 
-
-    data.done.toggle(success);
-    data.fail.toggle(!success); // Hide form on success
-
     form.toggle(!success); // Reset data and enable submit button
 
     reset(data);

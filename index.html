@@ -48,11 +48,11 @@
           <h1 class="heading-2">毛孩地圖</h1>
           <h1 class="heading-3">守護相助，共建一個更好的毛孩家園</h1>
           <div class="subscribe-form-wrapper w-form">
-            <form id="wf-form-Subscribe-Form" name="wf-form-Subscribe-Form" data-name="Subscribe Form" class="subscribe-form"><input type="email" class="input subscribe-input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email address" id="email-2" required=""><input type="submit" value="確認" data-wait="Please wait..." class="button w-button"></form>
-            <div class="form-success w-form-done">
+            <form id="wf-form-Subscribe-Form" name="wf-form-Subscribe-Form" data-name="Subscribe Form" class="subscribe-form"><input type="email" class="input subscribe-input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email address" id="email" required=""><input id="email-submit" type="submit" value="確認" data-wait="Please wait..." class="button w-button"></form>
+            <div id="done-top" class="form-success w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
-            <div class="form-error w-form-fail">
+            <div id="failed-top" class="form-error w-form-fail">
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
           </div>
@@ -110,11 +110,11 @@
             <h4 class="heading-8">想知道更多嗎？</h4>
             <p class="paragraph-5 p1">立即輸入電子信箱來獲得關於毛孩地圖的最新消息！</p>
             <div class="subscribe-form-wrapper footer_subscribe w-form">
-              <form id="wf-form-Subscribe-Form" name="wf-form-Subscribe-Form" data-name="Subscribe Form" class="subscribe-form"><input type="email" class="input subscribe-input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email address" id="email-2" required=""><input type="submit" value="確認" data-wait="Please wait..." class="button w-button"></form>
-              <div class="form-success w-form-done">
+              <form id="wf-form-Subscribe-Form" name="wf-form-Subscribe-Form" data-name="Subscribe Form" class="subscribe-form"><input type="email" class="input subscribe-input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email address" id="email-2" required=""><input id="email-2-submit" type="submit" value="確認" data-wait="Please wait..." class="button w-button"></form>
+              <div id="done-bot" class="form-success w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
-              <div class="form-error w-form-fail">
+              <div id="failed-bot" class="form-error w-form-fail">
                 <div>Oops! Something went wrong while submitting the form.</div>
               </div>
             </div>
@@ -144,8 +144,12 @@
       </div>
     </div>
   </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5eb8fc1def651a880540cfd0" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="js/email.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
