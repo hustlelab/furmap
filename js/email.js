@@ -32,7 +32,7 @@ $(document).ready(function () {
     let timestamp = Date.now();
 
     database
-      .ref("email/" + timestamp)
+      .ref(timestamp)
       .set({
         email: email,
       })
